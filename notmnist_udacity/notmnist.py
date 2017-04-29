@@ -5,6 +5,7 @@ import pickle
 PICKLE_FILE = 'notMNIST.pickle'
 
 def get_pickle_notmnist_train_valid_test():
+    pickle_file = PICKLE_FILE
     with open(pickle_file, 'rb') as f:
         pickle_data = pickle.load(f)
         train_features = pickle_data['train_dataset']
